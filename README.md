@@ -1,8 +1,8 @@
 # My-Project
 some projects and random practice exercises
 
-# 1. Image Resize Tool (https://imageresizertoolapp.azurewebsites.net/)
-
+# 1. Image Resize Tool 
+(https://imageresizertoolapp.azurewebsites.net/)
 ![image](https://github.com/user-attachments/assets/dbde43f2-517a-40ca-a0c6-c950193c579c)
 
 You can upload your images, specify the desired dimensions (width and height), and choose to maintain the aspect ratio. The tool will automatically resize the image for you, and you can then download it with just a click.
