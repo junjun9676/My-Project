@@ -1,7 +1,7 @@
 # My-Project
 some projects and random practice exercises
 
-# 1. Image Resize Tool
+# 1. Image Resize Tool (https://imageresizertoolapp.azurewebsites.net/)
 
 ![image](https://github.com/user-attachments/assets/dbde43f2-517a-40ca-a0c6-c950193c579c)
 
