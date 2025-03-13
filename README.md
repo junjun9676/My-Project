@@ -2,8 +2,8 @@
 some projects and random practice exercises
 
 # 1. Image Resize Tool 
-(https://imageresizertoolapp.azurewebsites.net/)
-![image](https://github.com/user-attachments/assets/dbde43f2-517a-40ca-a0c6-c950193c579c)
+
+![image](https://github.com/user-attachments/assets/ad43f391-095a-484b-9301-36291d4b780f)
 
 You can upload your images, specify the desired dimensions (width and height), and choose to maintain the aspect ratio. The tool will automatically resize the image for you, and you can then download it with just a click.
 
@@ -33,7 +33,7 @@ You can access the tool by visiting the following link:
 - **Spring Boot 3**: For the backend logic and handling image uploads and processing.
 - **HTML/CSS**: For the user interface.
 - **Azure Web App**: For hosting the application online with fast and reliable performance.
-
+--------------------------------------------------------------------------------------------
 
 # 2. Go Culture: Discover Malaysia's Rich Heritage
 
