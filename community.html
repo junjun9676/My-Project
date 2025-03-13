@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            margin: 0;
+            background-image: url('img/background.jpg');
+            background-color: #fff;
+            background-size: cover;
+
+        }
+
+        .container h1 {
+            font-size: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #5b94d1;
+        }
+
+        .comment {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        .comment-text {
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            word-wrap: break-word;
+        }
+
+        .comment-timestamp {
+            font-size: 12px;
+            color: #888;
+            text-align: right;
+        }
+
+        #comments-container {
+            overflow-y: auto;
+            height: 450px;
+            color: #000000;
+            border: 2px solid white;
+            fill: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        #post-text {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            color: #f2f2f2;
+
+        }
+
+        #post-button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #post-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2">
+                            <a href="https://www.google.com/maps/search/Jalan+Universiti,+Bandar+Barat,+31900+Kampar,+Perak"
+                                target="_blank">
+                        </i>Jalan Universiti, Bandar Barat, 31900 Kampar, Perak.</small>
+                    <a href="tel:+0123456789">
+                        <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</small>
+                    </a>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i><a
+                            href="mailto:goculture@gmail.com">
+                            goculture@gmail.com</a></small>
+
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                        href="https://twitter.com/TourismMalaysia"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                        href="https://www.facebook.com/TheMCGKL/"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                        href="https://www.linkedin.com/company/ministry-of-tourism-arts-culture-malaysia/"><i
+                            class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                        href="http://instagram.com/mcsbristol/?hl=en"><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle"
+                        href="https://www.youtube.com/@MalaysiaTrulyAsia"><i class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0" style="background-color: #091e3e;">
+
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="m-0"><i class="fas fa-flag-checkered me-2"></i>Go Culture</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link "><i class="fas fa-home me-2"></i>Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Cultures</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="info.html" class="dropdown-item">Racial and ethnic cultures</a>
+                            <a class="dropdown-toggle " href="infodetail.html"
+                                style="padding-left: 15px; display: block;">Traditional Culture </a>
+                            <a href="infodetail.html#musicAndDance" class="dropdown-item">Traditional Music and
+                                Dance</a>
+                            <a href="infodetail.html#costume" class="dropdown-item">Traditional Costume</a>
+                            <a href="infodetail.html#food" class="dropdown-item">Traditional Foods</a>
+                            <a href="infodetail.html#festival" class="dropdown-item">Festivals</a>
+                        </div>
+                    </div>
+                    <a href="shop.html" class="nav-item nav-link">Shop</a>
+                    <a href="restaurant.html" class="nav-item nav-link">Restaurant</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="quiz.html" class="dropdown-item">Quiz</a>
+                            <a href="community.html" class="dropdown-item active">Discussion</a>
+                            <a href="about.html" class="dropdown-item">About Us</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+                <i class="fa fa-search"></i>
+            </button>
+            <button type="button" class="btn btn-primary py-2 px-4 ms-3 user-button" id="btn"
+                title="Click to log in or log out">Login/Logout</button>
+
+            <!-- Check if the "user" key is present in local storage -->
+            <script>
+                $(document).ready(function () {
+                    const userButton = $('.user-button');
+                    const name = localStorage.getItem('current login'); // Get the "user" key from local storage
+
+                    // Function to update the button's content
+                    function updateButtonContent() {
+                        if (name != null) {
+                            userButton.html('<i class="fas fa-user me-2"></i>' + name);
+                        } else {
+                            userButton.html('<i class="fas fa-lock me-2"></i>Login');
+                        }
+                    }
+
+                    // Initially set the button's content
+                    updateButtonContent();
+
+                    // Click event handler for the button
+                    $('#btn').click(function (e) {
+                        e.preventDefault();
+                        // Add click event to clear local storage
+                        localStorage.removeItem('current login');
+                        window.location.href = 'login.html'; // Redirect to the login page
+                        // Update the button's content after the click event
+                        userButton.html('Login/Logout');
+                    });
+                });
+            </script>
+    </div>
+    </nav>
+
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3"
+                            placeholder="Type search keyword" id="searchKeyword">
+                        <button class="btn btn-primary px-4" id="searchButton"><i class="bi bi-search"></i></button>
+                        <button class="btn btn-primary px-4" id="historyButton"><i class="fas fa-history"
+                                style="color: #00000a;"></i></button></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!--Comment Start-->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <br>
+
+            <!--Allow to do tranlation on the current page-->
+            <div id="google_translate_element"></div>
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                }
+            </script>
+
+            <script type="text/javascript"
+                src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+            <h1>Comments</h1>
+            <div id="comments-container">
+                <!-- Comments will be displayed here -->
+            </div>
+            <br>
+            <textarea id="comment-text" rows="2" cols="60" placeholder="Type your comment here"></textarea>
+            <button id="post-button">Post Comment</button>
+        </div>
+    </div>
+
+
+    <script>
+        // Get the current login name
+        var name = localStorage.getItem("current login");
+
+        // Function to get and display comments from cookies
+        function displayComments() {
+            const comments = JSON.parse($.cookie('comments') || '[]'); // Use an empty array as a default value
+            const commentsContainer = $('#comments-container');
+            commentsContainer.empty();
+
+
+            if (comments.length === 0) { //no existing commment save d in cookies
+                commentsContainer.append('<p>No comments yet.</p>');
+
+            } else { // have existing comment(s) saved in cookies
+                comments.forEach(function (commentData) {
+                    const [commentWithTimestamp] = commentData.split(') '); // Split the comment into [name (timestamp, comment)]
+                    const [nameAndTimestamp, comment] = commentWithTimestamp.split(': '); // Split into [name (timestamp), comment]
+                    const [name, timestamp] = nameAndTimestamp.split(' ('); // Split into [name, timestamp]
+
+                    const commentDiv = $('<div class="comment"></div>');
+                    commentDiv.append('<p class="comment-text">' + name + ": " + comment + '</p>');
+                    commentDiv.append('<p class="comment-timestamp">' + timestamp + '</p>');
+                    commentsContainer.append(commentDiv);
+
+                });
+            }
+        }
+
+        // Function to save comments to cookies
+        function saveComments(comments) {
+            $.cookie('comments', JSON.stringify(comments)); // Store comments for 7 days
+        }
+
+        // Initial display of comments
+        displayComments();
+
+        // Event handler for the "Post Comment" button
+        $('#post-button').click(function () {
+            const commentText = $('#comment-text').val();
+            if (name.trim() !== '' && commentText.trim() !== '') {
+                const comments = JSON.parse($.cookie('comments') || '[]'); // Use an empty array as a default value
+                const timestamp = new Date().toLocaleString(); // Get the current date and time
+                const comment = `${name} (${timestamp}): ${commentText}`; // Include timestamp in the comment
+                comments.push(comment);
+                saveComments(comments);
+                displayComments();
+                $('#comment-text').val(''); // Clear the comment input
+            }
+        });
+    </script>
+    <!--Comment End-->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <div
+                        class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                        <a href="index.html" class="navbar-brand">
+                            <h1 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>Not a member?</h1>
+                        </a>
+                        <p class="mt-3 mb-4">Register now to get latest update on Malaysia culture!</p>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                                <button class="btn btn-dark">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-8 col-md-12 pt-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Get In Touch</h3>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <a href="https://www.google.com/maps/search/Jalan+Universiti,+Bandar+Barat,+31900+Kampar,+Perak"
+                                    target="_blank">
+                                    </i>Jalan Universiti, Bandar Barat, 31900 Kampar, Perak.</small>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <a href="mailto:goculture@gmail.com">goculture@gmail.com</a></small>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <p class="mb-0">+012 345 67890</p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary btn-square me-2" href="#"><i
+                                        class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#"><i
+                                        class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#"><i
+                                        class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square" href="#"><i
+                                        class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Quick Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="index.html"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="info.html"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Information</a>
+                                <a class="text-light mb-2" href="restaurant.html"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Search Restaurant</a>
+                                <a class="text-light mb-2" href="community.html"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Community Area</a>
+                                <a class="text-light mb-2" href="quiz.html"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Quiz</a>
+                                <a class="text-light mb-2" href="shop.html"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Shop</a>
+                                <a class="text-light" href="about.html"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white" style="background: #061429;">
+        <div class="container text-center">
+            <div class="row justify-content-end">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Go Culture</a>. All Rights
+                            Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+
+
+</html>

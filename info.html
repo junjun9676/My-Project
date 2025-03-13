@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Culture Informative Page</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Cultures Malaysia" name="keywords">
+    <meta content="Cultures in Malaysia" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .center-image {
+            display: block;
+            margin: 0 auto;
+            /* Center horizontally */
+            padding: 15px;
+        }
+
+        .h6 {
+
+            display: flex;
+            justify-content: space-between;
+            /* Space out the name and date */
+            width: 100%;
+            /* Take up remaining space */
+        }
+
+
+        #commentSection {
+            flex-direction: column;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2">
+                            <a href="https://www.google.com/maps/search/Jalan+Universiti,+Bandar+Barat,+31900+Kampar,+Perak"
+                                target="_blank">
+                        </i>Jalan Universiti, Bandar Barat, 31900 Kampar, Perak.</small>
+                    <a href="tel:+0123456789">
+                        <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</small>
+                    </a>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i><a
+                            href="mailto:goculture@gmail.com">
+                            goculture@gmail.com</a></small>
+
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                        href="https://twitter.com/TourismMalaysia"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                        href="https://www.facebook.com/TheMCGKL/"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                        href="https://www.linkedin.com/company/ministry-of-tourism-arts-culture-malaysia/"><i
+                            class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                        href="http://instagram.com/mcsbristol/?hl=en"><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle"
+                        href="https://www.youtube.com/@MalaysiaTrulyAsia"><i class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0" style="background-color: #091e3e;">
+
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="m-0"><i class="fas fa-flag-checkered me-2"></i>Go Culture</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link"><i class="fas fa-home me-2"></i>Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active " data-bs-toggle="dropdown">Cultures</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="info.html" class="dropdown-item active ">Racial and ethnic cultures</a>
+                            <a class="dropdown-toggle " href="infodetail.html"
+                                style="padding-left: 15px; display: block;">Traditional Culture </a>
+                            <a href="infodetail.html#musicAndDance" class="dropdown-item">Traditional Music and
+                                Dance</a>
+                            <a href="infodetail.html#costume" class="dropdown-item">Traditional Costume</a>
+                            <a href="infodetail.html#food" class="dropdown-item">Traditional Foods</a>
+                            <a href="infodetail.html#festival" class="dropdown-item">Festivals</a>
+                        </div>
+                    </div>
+                    <a href="shop.html" class="nav-item nav-link">Shop</a>
+                    <a href="restaurant.html" class="nav-item nav-link">Restaurant</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="quiz.html" class="dropdown-item">Quiz</a>
+                            <a href="community.html" class="dropdown-item">Discussion</a>
+                            <a href="about.html" class="dropdown-item">About Us</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+                <i class="fa fa-search"></i>
+            </button>
+            <button type="button" class="btn btn-primary py-2 px-4 ms-3 user-button" id="btn"
+                title="Click to log in or log out">Login/Logout</button>
+
+            <!-- Check if the "user" key is present in local storage -->
+            <script>
+                $(document).ready(function () {
+                    const userButton = $('.user-button');
+                    const name = localStorage.getItem('current login'); // Get the "user" key from local storage
+
+                    // Function to update the button's content
+                    function updateButtonContent() {
+                        if (name != null) {
+                            userButton.html('<i class="fas fa-user me-2"></i>' + name);
+                        } else {
+                            userButton.html('<i class="fas fa-lock me-2"></i>Login');
+                        }
+                    }
+
+                    // Initially set the button's content
+                    updateButtonContent();
+
+                    // Click event handler for the button
+                    $('#btn').click(function (e) {
+                        e.preventDefault();
+                        // Add click event to clear local storage
+                        localStorage.removeItem('current login');
+                        window.location.href = 'login.html'; // Redirect to the login page
+                        // Update the button's content after the click event
+                        userButton.html('Login/Logout');
+                    });
+                });
+            </script>
+    </div>
+    </nav>
+
+    </div>
+    <!-- Navbar End -->
+
+    <div class="container-fluid py-5 bg-header"
+        style="margin-bottom: 90px; background-image: url('/culture img/wallpaperflare.com_wallpaper.jpg');">
+        <div class="row py-5">
+            <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                <h1 class="display-4 text-white animated zoomIn">Welcome to the Diverse Cultures of Malaysia</h1>
+                <a class="h5 text-white">Cultures of Malaysia</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a class="h5 text-white">Races</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3"
+                            placeholder="Type search keyword" id="searchKeyword">
+                        <button class="btn btn-primary px-4" id="searchButton"><i class="bi bi-search"></i></button>
+                        <button class="btn btn-primary px-4" id="historyButton"><i class="fas fa-history"
+                                style="color: #00000a;"></i></button></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <!-- Blog Detail Start -->
+                    <div class="mb-5">
+                        <img class="img-fluid w-100 rounded mb-5" src="/culture img/istockphoto-1286950136-612x612.jpg">
+                        <h1 class="mb-4">Malaysia Cultures</h1>
+
+                        <p>Malaysia is indeed a beautiful and diverse country with a rich tapestry of cultures and
+                            traditions. Its multiculturalism has made Malaysia a gastronomical paradise and home to
+                            hundreds of colourful festivals. It's no wonder that we love celebrating and socialising. As
+                            a people, Malaysians are very laid back, warm and friendly.</p>
+                        <!-- Malay Culture -->
+                        <h2 id="malay"> Malay Culture</h2>
+                        <img src="/culture img/malayfam.png" width="550" height="400" class="center-image img-fluid">
+                        <p>The Malay culture in Malaysia is the largest ethnic group, comprising a significant portion
+                            of the population. Islam is the predominant religion among the Malays, and it plays a
+                            central role in shaping their way of life.</p>
+
+
+                        <p><strong>Special Festivals:</strong> Hari Raya Aidilfitri (Eid al-Fitr) is a significant
+                            celebration for Malays. It marks the end of Ramadan, the holy month of fasting. During Eid,
+                            families come together for special prayers at the mosque, visit relatives, and enjoy festive
+                            feasts.
+                            Traditional Malay clothing, such as the baju kurung for women and baju melayu for men, is
+                            worn with pride.</p>
+
+                        <p><strong>Traditional Food:</strong> Malay cuisine is renowned for its flavors and diversity.
+                            Nasi lemak, a dish of fragrant coconut rice served with sambal (spicy chili paste),
+                            anchovies, peanuts, and boiled egg, is a beloved national dish. Rendang, a rich and spicy
+                            meat stew, and satay, skewered and grilled meat served with peanut sauce, are also popular
+                            Malay delicacies.</p>
+
+                        <!-- Indian Culture -->
+                        <h2 id="indian">Indian Culture</h2>
+                        <img src="/culture img/indain1.jpg" width="550" height="400" class="center-image img-fluid">
+                        <p>The Indian community in Malaysia is primarily of Tamil descent and practices various
+                            religions, including Hinduism, Islam, and Christianity. This vibrant culture adds a unique
+                            dimension to the country's multicultural tapestry.</p>
+
+                        <p><strong>Special Festivals:</strong> Diwali, also known as Deepavali, is one of the most
+                            celebrated festivals among Malaysians of Indian descent. It is the Festival of Lights,
+                            symbolizing the victory of light over darkness and good over evil. Homes are adorned with
+                            oil lamps (diyas), colorful rangoli designs embellish doorways, and families exchange gifts
+                            and sweets during this joyful occasion.</p>
+
+                        <p><strong>Traditional Food:</strong> Indian cuisine in Malaysia is a delightful fusion of
+                            flavors. Roti canai, a versatile flatbread served with various curries, is a beloved
+                            breakfast choice. Biryani, a fragrant and flavorful rice dish often accompanied by succulent
+                            meats or vegetables, is a staple at special occasions. Various types of curry, including
+                            chicken, mutton, and vegetarian options, are relished by Malaysians of all backgrounds.</p>
+
+                        <!-- Chinese Culture -->
+                        <h2 id="chinese">Chinese Culture</h2>
+                        <img src="/culture img/chinese fam.jpg" width="550" height="400" class="center-image img-fluid">
+                        <p>The Chinese culture in Malaysia is diverse, with various dialect groups such as Hokkien,
+                            Cantonese, Hakka and more which contributing to its richness. Chinese traditions, customs,
+                            and festivals are deeply rooted in Malaysian society. The Chinese community has a profound
+                            influence on Malaysia's economic, social, and cultural landscape. From bustling Chinatowns
+                            to ornate
+                            temples, Chinese culture is visible throughout the country. </p>
+                        <p><strong>Special Festivals:</strong> Festivals like Chinese New Year, with its iconic lion and
+                            dragon dances, Lantern Festival and the Dragon Boat Festival are celebrated with
+                            enthusiasm, showcasing the vibrancy of this culture. </p>
+                        <p><strong>Traditional Food:</strong> Chinese cuisine, which includes dishes like dim sum, hot
+                            pot, and char kway teow,
+                            has also become an integral part of Malaysian culinary heritage.
+                        </p>
+                        <!-- Iban Culture -->
+                        <h2 id="iban">Iban Culture</h2>
+                        <img src="/culture img/iban.jpg" width="430" height="430" class="center-image img-fluid">
+                        <p>The Iban culture, indigenous to Sarawak, is known for its vibrant heritage. Iban people are
+                            traditionally associated with longhouses ban people are renowned for their vibrant heritage
+                            and are traditionally associated
+                            with longhouses that house multiple families. These longhouses are the heart of Iban
+                            communities, where customs, traditions, and stories are passed down
+                            through generations.The Iban are known for their rich oral tradition, encompassing epic
+                            tales, folklore, and spiritual beliefs. The Iban people also have a
+                            deep connection with nature, as many of their traditions are rooted in agriculture and the
+                            rainforest. </p>
+                        <p><strong>Special Festivals:</strong> Their rituals, such as the Gawai Dayak festival, involve
+                            intricate dances and music played on
+                            traditional instruments like the sape (a stringed instrument). </p>
+                        <p><strong>Traditional Food:</strong> Their traditional foods are called Pansuh food, which
+                            simply means the cooking of food or dish in a bamboo stem. Pansoh manok (chicken pansuh),
+                            which features chicken and lemongrass cooked in a bamboo log over an open fire. This natural
+                            way of cooking seals in the flavours and produces
+                        </p>
+
+
+                        <!-- Nyonya Culture -->
+                        <h2 id="nyonya">Nyonya Culture</h2>
+                        <img src="/culture img/nyonya.jpg" width="430" height="600" class="center-image img-fluid">
+                        <p>The Nyonya culture, also known as Peranakan or Straits Chinese, is a captivating blend of
+                            Chinese and Malay influences. It is celebrated for its distinctive cuisine, intricate
+                            embroidery, and vibrant traditions. Nyonya culture is also known for its distinctive
+                            clothing, the kebaya
+                            nyonya, adorned with intricate embroidery and beadwork. Traditional ceremonies, such as
+                            weddings, are marked by elaborate rituals, showcasing the community's commitment to
+                            preserving its rich heritage.</p>
+                        <p><strong>Special Festivals:</strong> Nyonya families often celebrate Chinese New Year with
+                            great enthusiasm.Nyonya households prepare special dishes like "kuih kapit" (love letters)
+                            and "kuih bangkit" (tapioca cookies) for guests.
+                        <p><strong>Traditional Food:</strong>Dishes like laksa, a flavorful noodle soup, nyonya chicken
+                            curry, and kuih, colorful and sweet traditional snacks, are popular Nyonya delights such as
+                            "Kuih lapis" and "kuih angku" (red tortoise cake) .</p>
+
+                        <!-- Kadazan Culture -->
+                        <h2 id="kadazan">Kadazan-Dusun Culture</h2>
+                        <img src="/culture img/kadazan.jpg" width="550" height="400" class="center-image img-fluid">
+                        <p>The Kadazan culture is indigenous to Sabah, another Malaysian state on the island of Borneo.
+                            It is a culture deeply rooted in agriculture and nature, with rice farming at its core.
+                            Kadazan people have a
+                            strong connection to the land, and their culture reflects a harmonious relationship with the
+                            environment. Traditional attire,
+                            such as the colorful baju kurung and the headgear known as sigar, is worn during cultural
+                            celebrations, adding to the visual richness of Kadazan heritage.</p>
+                        <p><strong>Special Festivals:</strong> The Kadazan people celebrate the Kaamatan festival, also
+                            known as Harvest Festival, to give thanks for a bountiful harvest
+                            and showcases traditional dances, rituals, and ceremonies. </p>
+                        <p><strong>Traditional Food:</strong> Hinava is a traditional Kadazan-Dusun dish of raw fish
+                            cured in lime juice. "Lihing" is a traditional rice wine that
+                            holds a special place in Kadazan culture. Made from glutinous rice, this homemade rice wine
+                            is an integral part of celebrations and rituals
+
+                    </div>
+
+
+
+
+
+                    <!-- Blog Detail End -->
+
+                    <!-- Comment List Start -->
+                    <div class="mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="mb-0" id="commentCount"> Comment</h3>
+                        </div>
+
+                        <div class="d-flex mb-4" id="commentSection">
+                            <!-- Comments will be displayed here -->
+                        </div>
+                    </div>
+
+
+
+                    <!-- Comment List End -->
+                    <!-- Comment Form Start -->
+                    <div class="bg-light rounded p-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="mb-0">Leave Your Comment</h3>
+                        </div>
+                        <form id="commentForm">
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" class="form-control bg-white border-0" placeholder="Your Name"
+                                        id="name" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label for="email">Your Email</label>
+                                    <input type="email" class="form-control bg-white border-0" placeholder="Your Email"
+                                        id="email" style="height: 55px;">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="comment">Comment</label>
+                                    <textarea class="form-control bg-white border-0" rows="5" id="comment"
+                                        placeholder="Comment"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Leave Your
+                                        Comment</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Comment Form End -->
+                </div>
+
+                <script>
+
+                    let comments = JSON.parse(localStorage.getItem('comments')) || [];
+                    //testing and clearing too much
+                    if (comments.length > 10) {
+                        localStorage.clear();
+                        comments = [];
+                    }
+                    // Check if there are any comments in localStorage
+
+                    if (comments.length < 3) {
+
+                        let manualComments = [
+                            {
+                                name: "Ali",
+                                commentText: "This is very good information. Satu Malaysia!",
+                                email: "", // Add email if available
+                                imgSrc: "/culture img/Screenshot 2023-09-11 173439.png",
+                                date: "31/8/2023"
+                            },
+                            {
+                                name: "Mei Mei",
+                                commentText: "Malaysia Boleh. Proud to be Anak Malaysia~~",
+                                email: "", // Add email if available
+                                imgSrc: "/culture img/comment chinese.png",
+                                date: "01/1/2023"
+                            },
+                            {
+                                name: "Jack",
+                                commentText: "As a traveler, I am very appreciate the information provide by this website, salute. Malaysia is indeed a beautiful and diverse country with a rich tapestry of cultures and traditions.",
+                                email: "", // Add email if available
+                                imgSrc: "/culture img/comment.png",
+                                date: "05/1/2023"
+                            }
+                        ];
+
+                        // Add the manually added comments to the comments array
+                        comments = comments.concat(manualComments);
+                    }
+
+
+
+
+
+                    // Store the updated comments array back in localStorage
+                    localStorage.setItem('comments', JSON.stringify(comments));
+
+                    document.getElementById('commentSection').innerHTML = `
+                            ${comments.map(comment => `
+                            <div class="d-flex mb-4">
+                                <img src="${comment.imgSrc}" class="img-fluid rounded"
+                                    style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6><a href="">${comment.name}</a> <small> <i>${comment.date}</i></small></h6>
+                                    <p>${comment.commentText}</p>
+                                    <button class="btn btn-sm btn-light">Reply</button>
+                                </div>
+                            </div>
+                            `).join('')}`;
+
+
+                    let commentnum = commentSection.children.length;
+                    // Get the comment count element
+                    const commentCountElement = document.getElementById('commentCount');
+                    // Update the comment count
+                    commentCountElement.textContent = `${commentnum} Comments`;
+
+                    // Function to handle form submission
+                    document.getElementById('commentForm').addEventListener('submit', function (e) {
+                        e.preventDefault();
+
+                        // Get user input
+                        const name = document.getElementById('name').value;
+                        const commentText = document.getElementById('comment').value;
+                        const email = document.getElementById('email').value;
+
+                        // Create a new comment object
+                        const newComment = {
+                            imgSrc: "/culture img/unknowncomment.jpg",
+                            name: name,
+                            commentText: commentText,
+                            email: email,
+                            date: new Date().toLocaleDateString()
+                        };
+
+                        // Retrieve existing comments from localStorage
+                        let comments = JSON.parse(localStorage.getItem('comments')) || [];
+
+                        // Add the new comment to the comments array
+                        comments.push(newComment);
+
+                        // Store the updated comments array back in localStorage
+                        localStorage.setItem('comments', JSON.stringify(comments));
+
+                        // Clear the form
+                        document.getElementById('commentForm').reset();
+
+                        // Reload the comments to display the new comment
+                        loadComments();
+                    });
+
+                    // Function to load and display comments
+                    function loadComments() {
+                        const commentSection = document.getElementById('commentSection');
+                        commentSection.style.flexDirection = 'column';
+
+                        // Retrieve existing comments from localStorage
+                        let comments = JSON.parse(localStorage.getItem('comments')) || [];
+
+                        // Clear the existing comments on the page
+                        commentSection.innerHTML = '';
+
+                        // Loop through the comments and display them
+                        for (const comment of comments) {
+                            const commentDiv = document.createElement('div');
+                            commentDiv.classList.add('d-flex', 'mb-4');
+
+                            // Create the comment elements
+                            const commentImg = document.createElement('img');
+                            commentImg.src = comment.imgSrc;
+                            commentImg.classList.add('img-fluid', 'rounded');
+                            commentImg.style.width = '45px';
+                            commentImg.style.height = '45px';
+
+                            const commentContent = document.createElement('div');
+                            commentContent.classList.add('ps-3');
+
+                            const commentHeader = document.createElement('h6');
+
+                            const commentName = document.createElement('a');
+                            commentName.href = '#';
+                            commentName.textContent = comment.name;
+
+                            const commentDateElement = document.createElement('small');
+                            commentDateElement.innerHTML = `   <i>${comment.date}</i>`;
+
+                            const commentTextElement = document.createElement('p');
+                            commentTextElement.textContent = comment.commentText;
+
+                            const replyButton = document.createElement('button');
+                            replyButton.classList.add('btn', 'btn-sm', 'btn-light');
+                            replyButton.textContent = 'Reply';
+
+                            // Append elements to the comment div
+                            commentHeader.appendChild(commentName);
+                            commentHeader.appendChild(commentDateElement);
+
+                            commentContent.appendChild(commentHeader);
+                            commentContent.appendChild(commentTextElement);
+                            commentContent.appendChild(replyButton);
+
+                            commentDiv.appendChild(commentImg);
+                            commentDiv.appendChild(commentContent);
+
+                            // Append the comment div to the comment section
+                            commentSection.appendChild(commentDiv);
+                        }
+
+                        // Update the comment count
+                        const commentCountElement = document.getElementById('commentCount');
+                        commentCountElement.textContent = `${comments.length} Comments`;
+                    }
+
+                    // Call the loadComments function to display comments on page load
+
+                    loadComments();
+
+                </script>
+
+                <!-- Sidebar Start -->
+                <div class="col-lg-4">
+
+                    <!-- Category Start -->
+                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="mb-0">Categories</h3>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#malay"><i
+                                    class="bi bi-arrow-right me-2"></i>Malay culture</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#indian"><i
+                                    class="bi bi-arrow-right me-2"></i>Indian culture</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#chinese"><i
+                                    class="bi bi-arrow-right me-2"></i>Chinese culture</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#iban"><i
+                                    class="bi bi-arrow-right me-2"></i>Iban culture</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#nyonya"><i
+                                    class="bi bi-arrow-right me-2"></i>Nyonya culture</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#kadazan"><i
+                                    class="bi bi-arrow-right me-2"></i>Kadazan-Dusun culture</a>
+
+
+                        </div>
+                    </div>
+
+                    <!-- Category End -->
+
+                    <!-- Learn more Start -->
+                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="mb-0">Learn More</h3>
+                        </div>
+
+
+                        <div class="d-flex rounded overflow-hidden mb-3">
+                            <img class="img-fluid" src="/culture img/traddance.jpg"
+                                style="width: 100; height: 100px; object-fit: cover;" alt="">
+                            <a href="infodetail.html#musicAndDance"
+                                class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0">Traditional
+                                Music and Dance
+                            </a>
+                        </div>
+                        <div class="d-flex rounded overflow-hidden mb-3">
+                            <img class="img-fluid"
+                                src="/culture img/Sabah_Malaysia_Welcoming-Contingent_Hari-Merdeka-2013-15_20200116154304.jpg"
+                                style="width: 150; height: 100px; object-fit: cover;" alt="">
+                            <a href="infodetail.html#costume"
+                                class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0">Traditional
+                                Costumes
+                            </a>
+                        </div>
+
+                        <div class="d-flex rounded overflow-hidden mb-3">
+                            <img class="img-fluid" src="culture img/malaysian-food-07-1024x683.jpg"
+                                style="width: 150; height: 100px; object-fit: cover;" alt="">
+                            <a href="infodetail.html#food"
+                                class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0">Traditional
+                                Foods
+                            </a>
+                        </div>
+
+                        <div class="d-flex rounded overflow-hidden mb-3">
+                            <img class="img-fluid" src="culture img/chinese-new-year-748x499.jpg"
+                                style="width: 150px; height: 100px; object-fit: cover;" alt="">
+                            <a href="infodetail.html#festival"
+                                class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0">Festivals
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Recent Post End -->
+
+                    <!-- Image Start -->
+                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+                        <img src="/culture img/flag .png" alt="" class="img-fluid rounded">
+                    </div>
+                    <!-- Image End -->
+
+                    <!-- Tags Start -->
+                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="mb-0">Tags</h3>
+                        </div>
+                        <div class="d-flex flex-wrap m-n1">
+                            <a href="" class="btn btn-light m-1">#Malaysia</a>
+                            <a href="" class="btn btn-light m-1">#Culture</a>
+                            <a href="" class="btn btn-light m-1">#Traditional</a>
+                            <a href="" class="btn btn-light m-1">#Races</a>
+                            <a href="" class="btn btn-light m-1">#Malays</a>
+                            <a href="" class="btn btn-light m-1">#Chinese</a>
+                            <a href="" class="btn btn-light m-1">#Indian</a>
+                            <a href="" class="btn btn-light m-1">#Iban</a>
+                            <a href="" class="btn btn-light m-1">#Kadazan-Dusun</a>
+                            <a href="" class="btn btn-light m-1">#Nyonya</a>
+                        </div>
+                    </div>
+                    <!-- Tags End -->
+
+                    <!-- Plain Text Start -->
+                    <div class="wow slideInUp" data-wow-delay="0.1s">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-5">
+                            <h3 class="mb-0">Video Sharing</h3>
+                        </div>
+                        <div class="bg-light text-center" style="padding: 10px;">
+                            <!-- Placeholder for video title -->
+                            <h2 id="videoTitle"></h2>
+                            <!-- Placeholder for video description -->
+                            <p id="videoDescription"></p>
+                            <div id="player">
+                                <iframe class="embed-responsive-item" width="370" height="245" style="padding: 10px"
+                                    src="https://www.youtube.com/embed/s9pQnK75h6E?si=6GyVwNvBSEtfvizN" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div> <!-- This is where your YouTube video will be embedded -->
+                        </div>
+                    </div>
+
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script>
+                        const settings = {
+                            async: true,
+                            crossDomain: true,
+                            url: 'https://youtube138.p.rapidapi.com/video/details/?id=s9pQnK75h6E&hl=en&gl=US',
+                            method: 'GET',
+                            headers: {
+                                'X-RapidAPI-Key': '075bab2f59msh5ee44fc75eb6b8fp13589ajsn601eced6a39d',
+                                'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
+                            }
+                        };
+
+                        $.ajax(settings).done(function (response) {
+                            console.log(response);
+
+                            // Check if the response contains the expected data
+                            if (response && response.title && response.description) {
+                                // Update the HTML elements with the video details
+                                var videoTitle = response.title;
+                                var videoDescription = response.description;
+                                document.getElementById('videoTitle').textContent = videoTitle;
+                                document.getElementById('videoDescription').textContent = videoDescription;
+                            } else {
+                                // Handle the case where the response doesn't contain the expected data
+                                console.error('API response does not contain video details.');
+                            }
+                        });
+                    </script>
+
+
+
+
+                </div>
+            </div>
+            <!-- Blog End -->
+        </div>
+
+        <!-- Vendor Start -->
+        <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container py-5 mb-5">
+                <div class="bg-white">
+                    <div class="owl-carousel vendor-carousel">
+                        <img src="/culture img/malayfam.png" alt="">
+                        <img src="/culture img/indain1.jpg" alt="">
+                        <img src="/culture img/kadazan.jpg" alt="">
+                        <img src="/culture img/chinese fam.jpg" alt="">
+                        <img src="/culture img/traddance.jpg" alt="">
+                        <img src="/culture img/Sabah_Malaysia_Welcoming-Contingent_Hari-Merdeka-2013-15_20200116154304.jpg"
+                            alt="">
+                        <img src="culture img/malaysian-food-07-1024x683.jpg" alt="">
+                        <img src="culture img/chinese-new-year-748x499.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Vendor End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-md-6 footer-about">
+                        <div
+                            class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                            <a href="index.html" class="navbar-brand">
+                                <h1 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>Not a member?</h1>
+                            </a>
+                            <p class="mt-3 mb-4">Register now to get latest update on Malaysia culture!</p>
+                            <form action="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                                    <button class="btn btn-dark">Sign Up</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6">
+                        <div class="row gx-5">
+                            <div class="col-lg-8 col-md-12 pt-5 mb-5">
+                                <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                    <h3 class="text-light mb-0">Get In Touch</h3>
+                                </div>
+                                <div class="d-flex mb-2">
+                                    <i class="bi bi-geo-alt text-primary me-2"></i>
+                                    <a href="https://www.google.com/maps/search/Jalan+Universiti,+Bandar+Barat,+31900+Kampar,+Perak"
+                                        target="_blank">
+                                        </i>Jalan Universiti, Bandar Barat, 31900 Kampar, Perak.</small>
+                                </div>
+                                <div class="d-flex mb-2">
+                                    <i class="bi bi-envelope-open text-primary me-2"></i>
+                                    <a href="mailto:goculture@gmail.com">goculture@gmail.com</a></small>
+                                </div>
+                                <div class="d-flex mb-2">
+                                    <i class="bi bi-telephone text-primary me-2"></i>
+                                    <p class="mb-0">+012 345 67890</p>
+                                </div>
+                                <div class="d-flex mt-4">
+                                    <a class="btn btn-primary btn-square me-2" href="#"><i
+                                            class="fab fa-twitter fw-normal"></i></a>
+                                    <a class="btn btn-primary btn-square me-2" href="#"><i
+                                            class="fab fa-facebook-f fw-normal"></i></a>
+                                    <a class="btn btn-primary btn-square me-2" href="#"><i
+                                            class="fab fa-linkedin-in fw-normal"></i></a>
+                                    <a class="btn btn-primary btn-square" href="#"><i
+                                            class="fab fa-instagram fw-normal"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                                <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                    <h3 class="text-light mb-0">Quick Links</h3>
+                                </div>
+                                <div class="link-animated d-flex flex-column justify-content-start">
+                                    <a class="text-light mb-2" href="index.html"><i
+                                            class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                    <a class="text-light mb-2" href="info.html"><i
+                                            class="bi bi-arrow-right text-primary me-2"></i>Information</a>
+                                    <a class="text-light mb-2" href="restaurant.html"><i
+                                            class="bi bi-arrow-right text-primary me-2"></i>Search Restaurant</a>
+                                    <a class="text-light mb-2" href="community.html"><i
+                                            class="bi bi-arrow-right text-primary me-2"></i>Community Area</a>
+                                    <a class="text-light mb-2" href="quiz.html"><i
+                                            class="bi bi-arrow-right text-primary me-2"></i>Quiz</a>
+                                    <a class="text-light mb-2" href="shop.html"><i
+                                            class="bi bi-arrow-right text-primary me-2"></i>Shop</a>
+                                    <a class="text-light" href="about.html"><i
+                                            class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-white" style="background: #061429;">
+            <div class="container text-center">
+                <div class="row justify-content-end">
+                    <div class="col-lg-8 col-md-6">
+                        <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                            <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Go Culture</a>. All
+                                Rights
+                                Reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+</body>
+
+</html>

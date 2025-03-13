@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Startup - Startup Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+      <!-- Topbar Start -->
+      <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2">
+                            <a href="https://www.google.com/maps/search/Jalan+Universiti,+Bandar+Barat,+31900+Kampar,+Perak"
+                                target="_blank">
+                        </i>Jalan Universiti, Bandar Barat, 31900 Kampar, Perak.</small>
+                    <a href="tel:+0123456789">
+                        <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</small>
+                    </a>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i><a
+                            href="mailto:goculture@gmail.com">
+                            goculture@gmail.com</a></small>
+
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                        href="https://twitter.com/TourismMalaysia"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                        href="https://www.facebook.com/TheMCGKL/"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                        href="https://www.linkedin.com/company/ministry-of-tourism-arts-culture-malaysia/"><i
+                            class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                        href="http://instagram.com/mcsbristol/?hl=en"><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle"
+                        href="https://www.youtube.com/@MalaysiaTrulyAsia"><i class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0" style="background-color: #091e3e;">
+
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="m-0"><i class="fas fa-flag-checkered me-2"></i>Go Culture</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link "><i class="fas fa-home me-2"></i>Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Cultures</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="info.html" class="dropdown-item active">Racial and ethnic cultures</a>
+                            <a class="dropdown-toggle " href="infodetail.html"
+                                style="padding-left: 15px; display: block;">Traditional Culture </a>
+                            <a href="infodetail.html#musicAndDance" class="dropdown-item">Traditional Music and
+                                Dance</a>
+                            <a href="infodetail.html#costume" class="dropdown-item">Traditional Costume</a>
+                            <a href="infodetail.html#food" class="dropdown-item">Traditional Foods</a>
+                            <a href="infodetail.html#festival" class="dropdown-item">Festivals</a>
+                        </div>
+                    </div>
+                    <a href="shop.html" class="nav-item nav-link active">Shop</a>
+                    <a href="restaurant.html" class="nav-item nav-link">Restaurant</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="quiz.html" class="dropdown-item">Quiz</a>
+                            <a href="community.html" class="dropdown-item">Discussion</a>
+                            <a href="about.html" class="dropdown-item">About Us</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+                <i class="fa fa-search"></i>
+            </button>
+            <button type="button" class="btn btn-primary py-2 px-4 ms-3 user-button" id="btn"
+                title="Click to log in or log out">Login/Logout</button>
+
+            <!-- Check if the "user" key is present in local storage -->
+            <script>
+                $(document).ready(function () {
+                    const userButton = $('.user-button');
+                    const name = localStorage.getItem('current login'); // Get the "user" key from local storage
+
+                    // Function to update the button's content
+                    function updateButtonContent() {
+                        if (name != null) {
+                            userButton.html('<i class="fas fa-user me-2"></i>' + name);
+                        } else {
+                            userButton.html('<i class="fas fa-lock me-2"></i>Login');
+                        }
+                    }
+
+                    // Initially set the button's content
+                    updateButtonContent();
+
+                    // Click event handler for the button
+                    $('#btn').click(function (e) {
+                        e.preventDefault();
+                        // Add click event to clear local storage
+                        localStorage.removeItem('current login');
+                        window.location.href = 'login.html'; // Redirect to the login page
+                        // Update the button's content after the click event
+                        userButton.html('Login/Logout');
+                    });
+                });
+            </script>
+    </div>
+    </nav>
+
+    </div>
+    <!-- Navbar End -->
+    
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3"
+                            placeholder="Type search keyword" id="searchKeyword">
+                        <button class="btn btn-primary px-4" id="searchButton"><i class="bi bi-search"></i></button>
+                        <button class="btn btn-primary px-4" id="historyButton"><i class="fas fa-history"
+                                style="color: #00000a;"></i></button></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    $(function () {
+        let festivalName;
+        $('#searchKeyword').on('keydown', function (e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                festivalName = $("#searchKeyword").val(); // Corrected to use #searchKeyword
+                getFestivalInfo(festivalName);
+            }
+        });
+
+        // Add a click event listener to the search button
+        $('#searchButton').on('click', function () {
+            festivalName = $("#searchKeyword").val();
+            getFestivalInfo(festivalName);
+        });
+
+    });
+
+    function getFestivalInfo(festival) {
+        let found = false;
+        $.ajax({
+            crossDomain: true,
+            type: "GET",
+            url: "https://raw.githubusercontent.com/Waikiat0323/festival/main/malaysia", // Corrected URL
+            dataType: "json",
+            success: function (data, textStatus, jqXHR) {
+                const re = new RegExp("^" + festival + "$", 'gi');
+                let result = "Festival not found!"; // Default result message
+                data.festivals.forEach(element => {
+                    let festivalName = element.name;
+                    var index = festivalName.search(re);
+                    if (index != -1) {
+                        result = "Name: " + element.name + "\nDate: " + element.date + "\nDescription: " + element.description;
+                        found = true;
+                        return false; // Exit the forEach loop when a match is found
+                    }
+                });
+                alert(result); // Show the result once
+            },
+            error: function () {
+                alert("Failed to retrieve festival data."); // Handle AJAX error
+            }
+        })
+    }
+</script>
+
+<!-- Full Screen Search End -->
+
+
+</div>
+
+    <!-- Quiz Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    
+    <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h1 class="fw-bold text-primary text-uppercase">Malaysian Culture Quiz</h1>
+            <h1 class="mb-0">Test Your Knowledge</h1>
+        </div>
+
+        <!-- Add this code where you want to display the links -->
+<div class="traditional-knowledge-links">
+    <h3>Explore Traditional Knowledge</h3>
+    <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Culture_of_Malaysia" target="_blank">Culture of Malysia</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/History_of_Malaysia" target="_blank">History of Malaysia</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/List_of_Malaysian_dishes" target="_blank">Food of Malaysia</a></li>
+    </ul>
+</div>
+
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+     new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+         <!-- Add username input field -->
+         <div class="mb-3">
+        
+            <label for="username" class="form-label"><h3 class="text-primary">Enter your username:</h3></label>
+            <input type="text" class="form-control" id="username" required>
+
+        </div>
+
+        <form id="quizForm">
+            <div class="mb-3">
+                <!-- Question 1 start -->
+                <h3 class="text-primary">Start to Answer Question:</h3>
+                <!-- Options-->
+                <label for="question1" class="form-label">1. What is the traditional Malay attire called for men?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question1"  value="A">
+                    <label class="form-check-label" id="q1a" for="q1a">A) Baju Melayu</label>
+                </div>
+                <!-- Addd other options... -->
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question1"  value="B">
+                    <label class="form-check-label" id="q1b" for="q1b">B) Baju Kurung</label>
+                </div>
+                <!-- Addd other options... -->
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question1"  value="C">
+                    <label class="form-check-label" id="q1c" for="q1c">C) Sarong</label>
+                </div>
+                <!-- Addd other options... -->
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question1"  value="D">
+                    <label class="form-check-label" for="q1d">D) Sari</label>
+                </div>
+            </div><!-- question1 end -->
+             <!-- Add more questions here with the same format as above -->
+
+            <!-- <question2 start> -->
+            <div class="mb-3">
+                <label for="question2" class="form-label">2. Which festival celebrates the victory of light over darkness in Malaysian culture?</label>
+            
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question2"  value="A">
+                    <label class="form-check-label"  id="q2a" for="q2a">A) Deepavali</label>
+                </div>
+                
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question2"  value="B">
+                    <label class="form-check-label" id="q2b" for="q2b">B) Chinese New Year</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question2" value="C">
+                    <label class="form-check-label" id="q2c" for="q2c">C) Hari Raya Aldifitri</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question2"  value="D">
+                    <label class="form-check-label" id="q2d" for="q2d">D) Wesak Day</label>
+                </div>
+            </div><!-- question 2 end -->
+            
+            <!-- <question3 start> -->
+                <div class="mb-3">
+                    <label for="question3" class="form-label">3.Which fruit is known as the "King of Fruits" in Malaysia?</label>
+            
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3"  value="A">
+                        <label class="form-check-label" id="q3a" for="q3a">A) Durian</label>
+                    </div>
+            
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3"  value="B">
+                        <label class="form-check-label" id="q3b" for="q3b">B) Rambutan</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3"  value="C">
+                        <label class="form-check-label" id="q3c" for="q3c">C) Mangosteen</label>
+                    </div>
+        
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3"  value="D">
+                        <label class="form-check-label" id="q3d" for="q3d">D) Jackfruit</label>
+                    </div>
+                </div><!-- question 3 end -->
+
+                <!-- <question 4 start> -->
+                <div class="mb-3"> 
+                    <label for="question4" class="form-label">4.What is the traditional weapon often associated with Malay martial arts?</label>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question4"  value="A">
+                        <label class="form-check-label" id="q4a" for="q4a">A) Kukri</label>
+                    </div>
+                
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question4"  value="B">
+                        <label class="form-check-label" id="q4b" for="q4a">B) Kris </label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question4"  value="C">
+                        <label class="form-check-label" id="q4c" for="q4c">C) Katana </label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question4"  value="D">
+                        <label class="form-check-label" id="q4d" for="q4d">D)  Nunchaku </label>
+                    </div>
+                </div> 
+                <!-- question 4 end -->
+
+                <!-- <question 5 start> -->
+                <div class="mb-3"> 
+                    <label for="question5" class="form-label">5.In Malaysian cuisine, what is the name of the popular dish consisting of rice cooked in coconut milk, served with various side dishes?</label>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question5"  value="A">
+                        <label class="form-check-label"  id="q5a" for="q5a">A) Nasi Goreng</label>
+                    </div>
+                
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question5"  value="B">
+                        <label class="form-check-label" id="q5b" for="q5b">B) Nasi Lemak</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question5"  value="C">
+                        <label class="form-check-label" id="q5c" for="q5c">C)  Nasi Ayam</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question5"  value="D">
+                        <label class="form-check-label" id="q5d" for="q5d">D) Nasi Kandar </label>
+                    </div>
+                </div> 
+                <!-- question 5 end -->
+
+                <!-- <question 6 start> -->
+                    <div class="mb-3"> 
+                        <label for="question6" class="form-label">6.Which Malaysian state is famous for its spicy cuisine, particularly dishes like Laksa?</label>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question6"  value="A">
+                            <label class="form-check-label"  id="q6a" for="q6a">A) Perak</label>
+                        </div>
+                    
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question6"  value="B">
+                            <label class="form-check-label" id="q6b" for="q6b">B) Terengganu</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question6"  value="C">
+                            <label class="form-check-label" id="q6c" for="q6c">C) Sarawak</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question6"  value="D">
+                            <label class="form-check-label" id="q6d" for="q6d">D) Penang</label>
+                        </div>
+                    </div> 
+                    <!-- question 6 end -->
+
+                    <!-- <question 7 start> -->
+                <div class="mb-3"> 
+                    <label for="question7" class="form-label">7. What is the traditional martial art form of Malaysia called?</label>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question7"  value="A">
+                        <label class="form-check-label"  id="q7a" for="q7a">A) Kung Fu</label>
+                    </div>
+                
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question7"  value="B">
+                        <label class="form-check-label" id="q7b" for="q6b">B) Silat</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question7"  value="C">
+                        <label class="form-check-label" id="q7c" for="q7c">C) Muay Thai</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question7" value="D">
+                        <label class="form-check-label" id="q7d" for="q7d">D) Nasi Kandar </label>
+                    </div>
+                </div> 
+                <!-- question 7 end -->
+
+                <!-- <question 8 start> -->
+                    <div class="mb-3"> 
+                        <label for="question8" class="form-label">8. Which festival marks the end of the Islamic holy month of Ramadan?</label>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question8"  value="A">
+                            <label class="form-check-label"  id="q8a" for="q8a">A) Hari Raya Aidilfitri </label>
+                        </div>
+                    
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question8"  value="B">
+                            <label class="form-check-label" id="q8b" for="q8b">B) Thaipusam </label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question8"  value="C">
+                            <label class="form-check-label" id="q8c" for="q8c">C) Wesak Day </label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question8" value="D">
+                            <label class="form-check-label" id="q8d" for="q8d">D) Pongal </label>
+                        </div>
+                    </div> 
+                    <!-- question 8 end -->
+
+                    <!-- <question 9 start> -->
+                <div class="mb-3"> 
+                    <label for="question9" class="form-label">9.Which ethnic group in Malaysia is known for its distinctive longhouses?</label>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question9"  value="A">
+                        <label class="form-check-label"  id="q9a" for="q9a">A) Chinese </label>
+                    </div>
+                
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question9"  value="B">
+                        <label class="form-check-label" id="q9b" for="q9b">B) Indian </label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question9"  value="C">
+                        <label class="form-check-label" id="q9c" for="q9c">C) Kadazan-Dusun </label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question9"  value="D">
+                        <label class="form-check-label" id="q9d" for="q9d">D) Iban </label>
+                    </div>
+                </div> 
+                <!-- question 9 end -->
+
+                <!-- <question 10 start> -->
+                    <div class="mb-3"> 
+                        <label for="question10" class="form-label">10.What is the traditional instrument often used in Malay music and dance performances?</label>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question10"  value="A">
+                            <label class="form-check-label"  id="q10a" for="q10a">A)  Gamelang</label>
+                        </div>
+                    
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question10"  value="B">
+                            <label class="form-check-label" id="q10b" for="q10b">B) Kompang</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question10"  value="C">
+                            <label class="form-check-label" id="q10c" for="q10c">C) Sitar</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question10" value="D">
+                            <label class="form-check-label" id="q10d" for="q10d">D) Tabla </label>
+                        </div>
+                    </div> 
+                    <!-- question 10 end -->
+
+            <button type="button" class="btn btn-primary" onclick="submitQuiz()">Submit</button>
+            <!-- Add this button after the closing tag of the quizResult div -->
+            <button id="retryButton" class="btn btn-primary mx-2 d-none" onclick="retryQuiz()">Retry Quiz</button>
+        </form>
+
+        <div id="quizResult" class="mt-4 d-none">
+            <h3 class="text-primary">Quiz Result</h3>
+
+            <h1 class="mb-0"><p id="usernameResult"></p></h1> 
+            <p id="score"></p>
+            
+        </div>
+
+    </div>
+</div>
+<!-- Quiz End -->
+
+<script>
+    function submitQuiz() {
+        const answers = {
+            question1: document.querySelector('input[name="question1"]:checked').value,
+            question2: document.querySelector('input[name="question2"]:checked').value,
+            question3: document.querySelector('input[name="question3"]:checked').value,
+            question4: document.querySelector('input[name="question4"]:checked').value,
+            question5: document.querySelector('input[name="question5"]:checked').value,
+            question6: document.querySelector('input[name="question6"]:checked').value,
+            question7: document.querySelector('input[name="question7"]:checked').value,
+            question8: document.querySelector('input[name="question8"]:checked').value,
+            question9: document.querySelector('input[name="question9"]:checked').value,
+            question10: document.querySelector('input[name="question10"]:checked').value,
+        };
+
+        // Define the correct answers
+        const correctAnswers = {
+            question1: 'B', question2: 'A',question3: 'A',question4: 'B',question5: 'B',
+            question6: 'B', question7: 'B',question8: 'A',question9: 'D',question10: 'B'
+        };
+        let score = 0;
+            document.getElementById("q1b").style.backgroundColor = "#00ff00";
+            document.getElementById("q2a").style.backgroundColor = "#00ff00";
+            document.getElementById("q3a").style.backgroundColor = "#00ff00";
+            document.getElementById("q4b").style.backgroundColor = "#00ff00";
+            document.getElementById("q5b").style.backgroundColor = "#00ff00";
+            document.getElementById("q6b").style.backgroundColor = "#00ff00";
+            document.getElementById("q7b").style.backgroundColor = "#00ff00";
+            document.getElementById("q8a").style.backgroundColor = "#00ff00";
+            document.getElementById("q9d").style.backgroundColor = "#00ff00";
+            document.getElementById("q10b").style.backgroundColor = "#00ff00";
+
+        for (const question in answers) {
+             const userAnswer = answers[question];
+             const correctAnswer = correctAnswers[question];
+
+        // Get the label element associated with the user's choice
+        const labelElement = document.querySelector(`label[for=${'q' + question.substring(8)}${userAnswer.toLowerCase()}]`);
+     
+            if (answers[question] === correctAnswers[question]) {
+                score++;
+            }
+        }
+
+         // Store the score in a cookie
+        document.cookie = `quizScore=${score}`;
+
+        // Disable radio buttons
+        document.querySelectorAll('input[type="radio"]').forEach(radio => radio.disabled = true);
+
+        // Show the retry button
+        document.getElementById('retryButton').classList.remove('d-none');
+        const username = document.getElementById('username').value;
+        sessionStorage.setItem('username', username); 
+
+        // Store username in session storage
+          if(score>=8){
+            document.getElementById('usernameResult').textContent = `Congratutation!!! ${username}`;
+        }      
+        
+        else if(score>=5 && score<8){
+            document.getElementById('usernameResult').textContent = `It's not bad.!!! ${username}`;
+        }
+
+        else{
+            document.getElementById('usernameResult').textContent = `Need to understan more!!! ${username}`;
+        }
+    
+        document.getElementById('retryButton').classList.remove('d-none');
+    
+        // Display the score
+        document.getElementById('score').textContent = `You got ${score} out of 10 correct.`;
+        document.getElementById('quizResult').classList.remove('d-none');
+
+    }
+
+    // Store the score in a cookie
+    document.cookie = `quizScore=${score}`;
+
+    function retryQuiz() {
+        // Reset the form
+        document.getElementById('quizForm').reset();
+
+        // Enable radio buttons
+        document.querySelectorAll('input[type="radio"]').forEach(radio => radio.disabled = false);
+
+        // Hide the result and retry button
+        document.getElementById('quizResult').classList.add('d-none');
+        document.getElementById('retryButton').classList.add('d-none');
+    }
+</script>
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-4 col-md-6 footer-about">
+                <div
+                    class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>Not a member?</h1>
+                    </a>
+                    <p class="mt-3 mb-4">Register now to get latest update on Malaysia culture!</p>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                            <button class="btn btn-dark">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6">
+                <div class="row gx-5">
+                    <div class="col-lg-8 col-md-12 pt-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-light mb-0">Get In Touch</h3>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-geo-alt text-primary me-2"></i>
+                            <a href="https://www.google.com/maps/search/Jalan+Universiti,+Bandar+Barat,+31900+Kampar,+Perak"
+                                target="_blank">
+                                </i>Jalan Universiti, Bandar Barat, 31900 Kampar, Perak.</small>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-envelope-open text-primary me-2"></i>
+                            <a href="mailto:goculture@gmail.com">goculture@gmail.com</a></small>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-telephone text-primary me-2"></i>
+                            <p class="mb-0">+012 345 67890</p>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <a class="btn btn-primary btn-square me-2" href="#"><i
+                                    class="fab fa-twitter fw-normal"></i></a>
+                            <a class="btn btn-primary btn-square me-2" href="#"><i
+                                    class="fab fa-facebook-f fw-normal"></i></a>
+                            <a class="btn btn-primary btn-square me-2" href="#"><i
+                                    class="fab fa-linkedin-in fw-normal"></i></a>
+                            <a class="btn btn-primary btn-square" href="#"><i
+                                    class="fab fa-instagram fw-normal"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-light mb-0">Quick Links</h3>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+                            <a class="text-light mb-2" href="index.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                            <a class="text-light mb-2" href="info.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Information</a>
+                            <a class="text-light mb-2" href="restaurant.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Search Restaurant</a>
+                            <a class="text-light mb-2" href="community.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Community Area</a>
+                            <a class="text-light mb-2" href="quiz.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Quiz</a>
+                            <a class="text-light mb-2" href="shop.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Shop</a>
+                            <a class="text-light" href="about.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid text-white" style="background: #061429;">
+    <div class="container text-center">
+        <div class="row justify-content-end">
+            <div class="col-lg-8 col-md-6">
+                <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                    <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Go Culture</a>. All Rights
+                        Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

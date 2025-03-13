@@ -1,0 +1,139 @@
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2">
+                            <a href="https://www.google.com/maps/search/Jalan+Universiti,+Bandar+Barat,+31900+Kampar,+Perak"
+                                target="_blank">
+                        </i>Jalan Universiti, Bandar Barat, 31900 Kampar, Perak.</small>
+                    <a href="tel:+0123456789">
+                        <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</small>
+                    </a>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i><a
+                            href="mailto:goculture@gmail.com">
+                            goculture@gmail.com</a></small>
+
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                        href="https://twitter.com/TourismMalaysia"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                        href="https://www.facebook.com/TheMCGKL/"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                        href="https://www.linkedin.com/company/ministry-of-tourism-arts-culture-malaysia/"><i
+                            class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                        href="http://instagram.com/mcsbristol/?hl=en"><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle"
+                        href="https://www.youtube.com/@MalaysiaTrulyAsia"><i class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0" style="background-color: #091e3e;">
+
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="m-0"><i class="fas fa-flag-checkered me-2"></i>Go Culture</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link "><i class="fas fa-home me-2"></i>Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Cultures</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="info.html" class="dropdown-item active">Racial and ethnic cultures</a>
+                            <a class="dropdown-toggle " href="infodetail.html"
+                                style="padding-left: 15px; display: block;">Traditional Culture </a>
+                            <a href="infodetail.html#musicAndDance" class="dropdown-item">Traditional Music and
+                                Dance</a>
+                            <a href="infodetail.html#costume" class="dropdown-item">Traditional Costume</a>
+                            <a href="infodetail.html#food" class="dropdown-item">Traditional Foods</a>
+                            <a href="infodetail.html#festival" class="dropdown-item">Festivals</a>
+                        </div>
+                    </div>
+                    <a href="shop.html" class="nav-item nav-link active">Shop</a>
+                    <a href="restaurant.html" class="nav-item nav-link">Restaurant</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="quiz.html" class="dropdown-item">Quiz</a>
+                            <a href="community.html" class="dropdown-item">Discussion</a>
+                            <a href="about.html" class="dropdown-item">About Us</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+                <i class="fa fa-search"></i>
+            </button>
+            <button type="button" class="btn btn-primary py-2 px-4 ms-3 user-button" id="btn"
+                title="Click to log in or log out">Login/Logout</button>
+
+            <!-- Check if the "user" key is present in local storage -->
+            <script>
+                $(document).ready(function () {
+                    const userButton = $('.user-button');
+                    const name = localStorage.getItem('current login'); // Get the "user" key from local storage
+
+                    // Function to update the button's content
+                    function updateButtonContent() {
+                        if (name != null) {
+                            userButton.html('<i class="fas fa-user me-2"></i>' + name);
+                        } else {
+                            userButton.html('<i class="fas fa-lock me-2"></i>Login');
+                        }
+                    }
+
+                    // Initially set the button's content
+                    updateButtonContent();
+
+                    // Click event handler for the button
+                    $('#btn').click(function (e) {
+                        e.preventDefault();
+                        // Add click event to clear local storage
+                        localStorage.removeItem('current login');
+                        window.location.href = 'login.html'; // Redirect to the login page
+                        // Update the button's content after the click event
+                        userButton.html('Login/Logout');
+                    });
+                });
+            </script>
+    </div>
+    </nav>
+
+    </div>
+    <!-- Navbar End -->
+    
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3"
+                            placeholder="Type search keyword" id="searchKeyword">
+                        <button class="btn btn-primary px-4" id="searchButton"><i class="bi bi-search"></i></button>
+                        <button class="btn btn-primary px-4" id="historyButton"><i class="fas fa-history"
+                                style="color: #00000a;"></i></button></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
