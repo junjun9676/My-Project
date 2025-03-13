@@ -25,6 +25,8 @@ You can access the tool by visiting the following link:
 2. **Set Dimensions**: Input the desired width and height for the resized image.
 3. **Maintain Aspect Ratio**: Optionally, check the box to maintain the aspect ratio while resizing.
 4. **Resize and Download**: Click the "Resize" button, and once the resizing is complete, you can download your resized image.
+5. **No Installation Needed**: The tool works entirely in your browser, so you don’t need to install any software.
+6. **Responsive Design**: The web app works seamlessly across devices and screen sizes.
 
 ## Technologies Used
 
@@ -32,8 +34,27 @@ You can access the tool by visiting the following link:
 - **HTML/CSS**: For the user interface.
 - **Azure Web App**: For hosting the application online with fast and reliable performance.
 
-## Why Use This Tool?
 
-- **No Installation Needed**: The tool works entirely in your browser, so you don’t need to install any software.
-- **Responsive Design**: The web app works seamlessly across devices and screen sizes.
-- **Easy to Use**: Simple interface that makes resizing images a breeze.
+# 2. Go Culture: Discover Malaysia's Rich Heritage
+
+**Go Culture** is a web platform showcasing Malaysia’s diverse culture, featuring interactive elements like quizzes, shopping, and cultural content. It uses modern web technologies to provide an engaging user experience.
+![image](https://github.com/user-attachments/assets/11c6ad34-2129-4ab7-a0bd-807c66d1f97f)
+
+[Visit the Website](https://chjunjun.azurewebsites.net/index.html)
+
+
+## Key Features
+
+- **Cultural Exploration**: Learn about Malaysia's food, festivals, music, and costumes.
+- **Interactive**: Includes quizzes, a shop, discussion page, and Google Maps integration.
+- **Embedded Media**: Image galleries and YouTube videos to enhance content.
+- **Login System**: Secure user login for personalized experience.
+- **Multi-language Support**: Page translation for global accessibility.
+
+## Technologies
+
+- **Frontend**: HTML, CSS (Bootstrap), JavaScript
+- **Backend**: Login functionality (server-side integration)
+- **APIs**: Google Maps, YouTube embedding
+
+
