@@ -1,0 +1,74 @@
+{
+    "welcome": "📚 欢迎来到图书管理系统",
+    "view_books": "📖 查看书籍列表",
+    "home": "🏠 首页",
+    "books": "📚 书籍管理",
+    "search": "搜索书名...",
+    "searchBtn": "🔍 搜索",
+    "refreshBtn": "🔄 刷新数据",
+    "itemsPerPage": "每页显示:",
+    "prev": "上一页",
+    "next": "下一页",
+    "addBook": "添加新书",
+    "bookName": "书名",
+    "bookType": "类型",
+    "bookDescription": "描述",
+    "addBtn": "➕ 添加",
+    "bookList": "书籍列表",
+    "id": "ID",
+    "action": "操作",
+    "edit": "✏️ 编辑",
+    "delete": "🗑️ 删除",
+    "editBook": "编辑书籍",
+    "save": "💾 保存",
+    "cancel": "❌ 取消",
+    "noBooks": "没有找到书籍",
+
+
+    "title": {
+        "libraryManagement": "图书管理",
+        "addBook": "添加新书",
+        "bookList": "书籍列表",
+        "editBook": "编辑书籍"
+    },
+    "placeholder": {
+        "searchBook": "搜索书籍...",
+        "bookName": "输入书名",
+        "bookType": "输入书籍类型",
+        "description": "输入书籍描述"
+    },
+    "button": {
+        "search": "搜索",
+        "refresh": "刷新",
+        "add": "添加书籍",
+        "edit": "编辑",
+        "delete": "删除",
+        "save": "保存",
+        "cancel": "取消"
+    },
+    "pagination": {
+        "perPage": "每页显示书籍数量：",
+        "previous": "上一页",
+        "next": "下一页"
+    },
+    "label": {
+        "bookName": "书名",
+        "bookType": "书籍类型",
+        "description": "描述",
+        "actions": "操作"
+    },
+    "message": {
+        "noBooksFound": "未找到书籍。",
+        "deleteConfirmation": "确定要删除这本书吗？",
+        "addSuccess": "书籍添加成功！",
+        "editSuccess": "书籍更新成功！",
+        "deleteSuccess": "书籍删除成功！",
+        "fetchError": "获取书籍失败。",
+        "addError": "添加书籍失败。",
+        "editError": "编辑书籍失败。",
+        "deleteError": "删除书籍失败。"
+    }
+}
+
+
+
